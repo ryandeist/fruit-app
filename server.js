@@ -1,6 +1,9 @@
 // Here is where we import modules
 // We begin by loading Express
+require('dotenv').config();
+require("./config/database");
 const express = require("express");
+
 
 const app = express();
 const PORT = process.env.PORT ? process.env.PORT : '3000' ; 
