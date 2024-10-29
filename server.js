@@ -4,7 +4,7 @@ require('dotenv').config();
 require("./config/database");
 const express = require("express");
 
-
+const Fruit = require("./models/fruit");
 const app = express();
 const PORT = process.env.PORT ? process.env.PORT : '3000' ; 
 
